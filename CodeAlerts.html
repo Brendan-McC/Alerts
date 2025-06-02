@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emergency Code Alerts</title>
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    /* body { font: 14px sans-serif; text-align: center; }
+    .spacer { margin-top: 15px; }
+    .alert-image {
+      max-width: 100%;
+      height: auto;
+      width: 300px;
+      max-height: 200px;
+      object-fit: contain;
+    } */
+
+  .accordion-button[class*="btn-"] {
+    color: var(--bs-btn-color);
+    background-color: var(--bs-btn-bg);
+    border-color: var(--bs-btn-border-color);
+  }
+
+  .accordion-button[class*="btn-"]:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+  }
+
+  .accordion-button[class*="btn-"]:not(.collapsed) {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: var(--bs-btn-active-border-color);
+    box-shadow: none;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- Bootstrap Header (Navbar) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="Index.html">Bellwoods Alerts</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="CodeAlerts.html">Code Alerts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contacts.html">Emergency Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container text-left mt-4">
+    <h4>Bellwoods Code Alert System</h4>
+    <hr>
+    <h5>Emergency Alert Codes:
+      <small class="text-muted">
+        The following codes provide alerts for unique scenarios. Listen for alerts and follow the steps described.
+      </small>
+    </h5>
+
+    <!-- Alert Sections -->
+<div class="accordion" id="codeAlerts">
+
+  <!-- Code Black -->
+  <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingBlack">
+      <button class="accordion-button collapsed btn btn-dark w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseBlack" aria-expanded="false" aria-controls="collapseBlack">
+        Code Black: Bomb Threat/Suspicious Package <span class="float-end"></span>
+      </button>
+    </h2>
+    <div id="collapseBlack" class="accordion-collapse collapse" aria-labelledby="headingBlack" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+        <img src="./images/black.png" alt="Code Black" class="alert-image">
+        <p class="mt-3">The Code Black Plan informs staff of appropriate actions to be taken during a bomb threat emergency or when a suspicious package is identified.</p>
+        <ul class="text-muted text-start">
+          <li>Remain Calm.</li>
+          <li>Listen for overhead announcements and follow instructions.</li>
+          <li>If you receive a bomb threat or identify a suspicious package, alert a staff member immediately. Do not touch or move the package.</li>
+          <li>Contact the Designated <a href="Contacts.html" target="_blank">Emergency Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+      <!-- Code Blue -->
+  <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingBlue">
+      <button class="accordion-button collapsed btn btn-primary w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseBlue" aria-expanded="false" aria-controls="collapseBlue">
+        Code Blue: Adult Medical Emergency <span class="float-end"></span>
+          </button>
+    </h2>
+    <div id="collapseBlue" class="accordion-collapse collapse" aria-labelledby="headingBlue" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+            <img src="./images/blue.png" alt="Code Blue" class="alert-image">
+            <p class="mt-3">Used to indicate a medical emergency involving an adult.</p>
+            <ul class="text-muted text-start">
+              <li>Call 911 and alert other staff in the vicinity.</li>
+              <li>Begin CPR if you are trained and the person is unresponsive.</li>
+              <li>Retrieve and use the AED if available.</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+ 
+  <!-- Code Brown -->
+  <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingBrown">
+      <button class="accordion-button collapsed btn btn-brown w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseBrown" aria-expanded="false" aria-controls="collapseBrown">
+        Code Brown: Hazardous Spill <span class="float-end"></span>
+          </button>
+    </h2>
+    <div id="collapseBrown" class="accordion-collapse collapse" aria-labelledby="headingBrown" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+            <img src="./images/brown.png" alt="Code Brown" class="alert-image">
+            <p class="mt-3">A Code Brown refers to the plans and procedures used to protect Bellwoods' patients, visitors, families, staff, physicians, volunteers and property from hazardous or potentially hazardous chemical/biological spills.</p>
+            <ul class="text-muted text-start">
+              <li>Do not enter the affected area.</li>
+              <li>Remove any vulnerable persons from the area if safe to do so.</li>
+              <li>Await direction from Management staff.</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+
+  <!-- Code Green -->
+  <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingGreen">
+      <button class="accordion-button collapsed btn btn-success w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseGreen" aria-expanded="false" aria-controls="collapseGreen">
+        Code Green: Evacuation <span class="float-end"></span>
+          </button>
+    </h2>
+    <div id="collapseGreen" class="accordion-collapse collapse" aria-labelledby="headingGreen" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+          <img src="./images/green.png" alt="Code Green" class="alert-image">
+            <p class="mt-3">In the event of a hospital evacuation, a Code Green is used to make decisions that focus on the safety for all. This includes whether it is safest to move to another unit or to the outside in the event of an emergency.</p>
+            <ul class="text-muted text-start">
+              <li>Remain calm.</li>
+              <li>Do not enter any affected area(s).</li>
+              <li>If directed to relocate by a staff member, proceed to the designated waiting area. Follow a single file line. Leave all belongings behind.</li>
+            </ul>
+       </div>
+      </div>
+  </div>
+
+  <!-- Code Grey -->
+  <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingGrey">
+      <button class="accordion-button collapsed btn btn-secondary w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseGrey" aria-expanded="false" aria-controls="collapseGrey">
+        Code Grey: Loss of Essential Service <span class="float-end"></span>
+          </button>
+    </h2>
+    <div id="collapseGrey" class="accordion-collapse collapse" aria-labelledby="headingGrey" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+          <img src="./images/grey.png" alt="Code Grey" class="alert-image">
+            <p class="mt-3">In the event there is an infrastructure system(s) failure or loss, or the implementation of intervention measures that constitute a health or safety risk to patients, visitors, staff, physicians and volunteers, a Code Grey will be announced.</p>
+            <ul class="text-muted text-start">
+              <li>Report any outages or service disruptions to a staff member.</li>
+              <li>Follow contingency technology plans.</li>
+              <li>Prioritize delivery of critical client care.</li>
+              <li>Limit communication to essential matters.</li>
+            </ul>
+       </div>
+      </div>
+  </div>
+
+  <!-- Code Orange -->
+  <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingOrange">
+      <button class="accordion-button collapsed btn btn-orange w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseOrange" aria-expanded="false" aria-controls="collapseOrange">
+        Code Orange: External Disaster <span class="float-end"></span>
+          </button>
+    </h2>
+    <div id="collapseOrange" class="accordion-collapse collapse" aria-labelledby="headingOrange" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+          <img src="./images/orange.png" alt="Code Orange" class="alert-image">
+            <p class="mt-3">The goal of a Code Orange is to enable Bellwoods to receive and treat a sudden influx of patients and while continuing to provide patient care and information management. A Family Information Support Centre may be activated to act as a central location to receive essential information for family members and the community.</p>
+            <ul class="text-muted text-start">
+              <li>Remain Calm.</li>
+              <li>Do not enter any affected area(s).</li>
+              <li>Await direction from staff.</li>
+            </ul>
+       </div>
+      </div>
+  </div>
+
+  <!-- Code Pink -->
+  <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingPink">
+      <button class="accordion-button collapsed btn btn-pink w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapsePink" aria-expanded="false" aria-controls="collapsePink">
+        Code Pink: Paediatric Medical Emergency <span class="float-end"></span>
+          </button>
+    </h2>
+    <div id="collapsePink" class="accordion-collapse collapse" aria-labelledby="headingPink" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+          <img src="./images/pink.png" alt="Code Pink" class="alert-image">
+            <p class="mt-3">Used when a medical emergency involves a child or infant.</p>
+            <ul class="text-muted text-start">
+              <li>Call 911 and notify staff.</li>
+              <li>Provide care appropriate to your training.</li>
+              <li>Do not leave the child unattended.</li>
+            </ul>
+       </div>
+      </div>
+  </div>
+
+  <!-- Code Purple -->
+
+  <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingPurple">
+      <button class="accordion-button collapsed btn btn-purple w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapsePurple" aria-expanded="false" aria-controls="collapsePurple">
+        Code Purple: Hostage Taking/Person with Weapon <span class="float-end"></span>
+          </button>
+    </h2>
+    <div id="collapsePurple" class="accordion-collapse collapse" aria-labelledby="headingPurple" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+          <img src="./images/purple.png" alt="Code Purple" class="alert-image">
+            <p class="mt-3">The purpose of Code Purple is to provide a guideline to persons involved in an actual or potential hostage situation or involved with a person who has a weapon so that they may respond appropriately.</p>
+            <ul class="text-muted text-start">
+              <li>Remain calm.</li>
+              <li>Do not enter any affected area(s).</li>
+              <li>Await direction from staff or emergency services.</li>
+            </ul>
+       </div>
+      </div>
+  </div>
+
+  <!-- Code Red -->
+  <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingRed">
+      <button class="accordion-button collapsed btn btn-danger w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseRed" aria-expanded="false" aria-controls="collapseRed">
+        Code Red: Fire Emergency <span class="float-end"></span>
+          </button>
+    </h2>
+    <div id="collapseRed" class="accordion-collapse collapse" aria-labelledby="headingRed" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+          <img src="./images/red.png" alt="Code Red" class="alert-image">
+            <p class="mt-3">Activated in the event of fire, smoke, or fire alarm activation.</p>
+            <ul class="text-muted text-start">
+              <li>Remove anyone in immediate danger.</li>
+              <li>Activate the alarm and call 911.</li>
+              <li>Close doors to contain the fire and evacuate if instructed.</li>
+            </ul>
+       </div>
+      </div>
+  </div>
+
+  <!-- Code White -->
+  <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingWhite">
+      <button class="accordion-button collapsed btn btn-light w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseWhite" aria-expanded="false" aria-controls="collapseWhite">
+        Code White: Violent Person <span class="float-end"></span>
+          </button>
+    </h2>
+    <div id="collapseWhite" class="accordion-collapse collapse" aria-labelledby="headingWhite" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+          <img src="./images/white.png" alt="Code White" class="alert-image">
+            <p class="mt-3">Initiated when a person is behaving violently or aggressively, potentially posing a danger to themselves or others.</p>
+            <ul class="text-muted text-start">
+              <li>Maintain a safe distance.</li>
+              <li>Notify staff or call 911 if needed.</li>
+              <li>Use de-escalation techniques if trained and safe to do so.</li>
+            </ul>
+       </div>
+      </div>
+  </div>
+
+  <!-- Code Yellow -->
+  <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingYellow">
+      <button class="accordion-button collapsed btn btn-warning w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseYellow" aria-expanded="false" aria-controls="collapseYellow">
+        Code Yellow: Missing Patient <span class="float-end"></span>
+          </button>
+    </h2>
+    <div id="collapseYellow" class="accordion-collapse collapse" aria-labelledby="headingYellow" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+          <img src="./images/yellow.png" alt="Code Yellow" class="alert-image">
+            <p class="mt-3">Used to notify staff that a patient is missing from the facility and unaccounted for.</p>
+            <ul class="text-muted text-start">
+              <li>Check your assigned area.</li>
+              <li>Notify staff if the patient is located.</li>
+              <li>Do not restrain or chase the individual. Stay calm and alert others.</li>
+            </ul>
+       </div>
+      </div>
+  </div>
+
+  <!-- Code Amber -->
+  
+    <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingAmber">
+      <button class="accordion-button collapsed btn btn-amber w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseAmber" aria-expanded="false" aria-controls="collapseAmber">
+        Code Amber: Missing Infant/Child <span class="float-end"></span>
+          </button>
+    </h2>
+    <div id="collapseAmber" class="accordion-collapse collapse" aria-labelledby="headingAmber" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+          <img src="./images/amber.png" alt="Code Amber" class="alert-image">
+            <p class="mt-3">Bellwoods is responsible for ensuring the safety of its patients and visitors, and will activate a Code Amber search procedure when an infant/child is declared missing and/or abducted by a non-authorized person.</p>
+            <ul class="text-muted text-start">
+              <li>Check your assigned area.</li>
+              <li>Notify staff if the patient is located.</li>
+              <li>Do not restrain or chase the individual. Stay calm and alert others.</li>
+            </ul>
+       </div>
+      </div>
+  </div>
+
+  <!-- Code Silver -->
+
+  <div class="accordion-item my-3">
+    <h2 class="accordion-header" id="headingSilver">
+      <button class="accordion-button collapsed btn btn-silver w-100 text-start" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseSilver" aria-expanded="false" aria-controls="collapseSilver">
+        Code Silver: Active Attacker <span class="float-end"></span>
+          </button>
+    </h2>
+    <div id="collapseSilver" class="accordion-collapse collapse" aria-labelledby="headingSilver" data-bs-parent="#codeAlerts">
+      <div class="accordion-body text-center">
+          <img src="./images/silver.png" alt="Code Silver" class="alert-image">
+            <p class="mt-3">Signifies that an individual is armed or actively threatening harm to others.</p>
+            <ul class="text-muted text-start">
+              <li>If possible, evacuate the area quickly and safely.</li>
+              <li>If evacuation is not possible, hide and secure your area.</li>
+              <li>Remain quiet and await instructions from authorities.</li>
+            </ul>
+       </div>
+      </div>
+  </div>
+
+
+</div> <!-- end accordion -->
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script>
+  console.log('Bootstrap version:', bootstrap?.Version || 'Not loaded');
+</script>
+
+</body>
+
+</html>
